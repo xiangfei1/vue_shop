@@ -7,6 +7,7 @@ const User = () => import('@/component/user/User.vue')
 const Rights = () => import('@/component/power/Rights.vue')
 const Roles = () => import('@/component/power/Roles.vue')
 const Categories = () => import('@/component/goods/Categories.vue')
+const Params = () => import('@/component/goods/Params.vue')
 Vue.use(VueRouter)
 const routes = [
   { path: '/', redirect: '/login' },
@@ -35,6 +36,10 @@ const routes = [
       {
         path: '/categories',
         component: Categories
+      },
+      {
+        path: '/params',
+        component: Params
       }
     ]
   }
