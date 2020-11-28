@@ -198,7 +198,7 @@ export default {
         type: 'warning'
       }).catch(err => err)
       if (confirmRemove !== 'confirm') {
-        return this.$msg.info('已取消删除')
+        return this.$msg('已取消删除')
       }
       const { data: res } = await this.$http.delete(`users/${id}`)
       if (res.meta.status !== 200) {

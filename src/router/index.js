@@ -8,6 +8,9 @@ const Rights = () => import('@/component/power/Rights.vue')
 const Roles = () => import('@/component/power/Roles.vue')
 const Categories = () => import('@/component/goods/Categories.vue')
 const Params = () => import('@/component/goods/Params.vue')
+const GoodsList = () => import('@/component/goods/GoodsList.vue')
+const AddGoods = () => import('@/component/goods/AddGoods.vue')
+const OrderList = () => import('@/component/order/OrderList.vue')
 Vue.use(VueRouter)
 const routes = [
   { path: '/', redirect: '/login' },
@@ -40,6 +43,18 @@ const routes = [
       {
         path: '/params',
         component: Params
+      },
+      {
+        path: '/goods',
+        component: GoodsList
+      },
+      {
+        path: '/goods/add',
+        component: AddGoods
+      },
+      {
+        path: '/orders',
+        component: OrderList
       }
     ]
   }

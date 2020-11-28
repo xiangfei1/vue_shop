@@ -24,3 +24,13 @@ html, body, #app {
 .el-pagination {
   margin-top: 15px;
 }
+
+/* 让消息提示覆盖 */
+.el-message {
+  top: 20px !important;
+  }
+
+  /* 设置富文本组件的最小高度 */
+ .ql-container {
+    min-height: 300px;
+  }

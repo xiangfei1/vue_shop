@@ -185,7 +185,7 @@ export default {
         type: 'warning'
       }).catch(err => err)
       if (confirm !== 'confirm') {
-        return this.$msg.info('已取消删除')
+        return this.$msg('已取消删除')
       }
       const { data: res } = await this.$http.delete(`categories/${row.cat_id}`)
       if (res.meta.status !== 200) {
