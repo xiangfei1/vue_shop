@@ -11,6 +11,7 @@ const Params = () => import('@/component/goods/Params.vue')
 const GoodsList = () => import('@/component/goods/GoodsList.vue')
 const AddGoods = () => import('@/component/goods/AddGoods.vue')
 const OrderList = () => import('@/component/order/OrderList.vue')
+const CountData = () => import('@/component/report/CountData.vue')
 Vue.use(VueRouter)
 const routes = [
   { path: '/', redirect: '/login' },
@@ -55,6 +56,10 @@ const routes = [
       {
         path: '/orders',
         component: OrderList
+      },
+      {
+        path: '/reports',
+        component: CountData
       }
     ]
   }
